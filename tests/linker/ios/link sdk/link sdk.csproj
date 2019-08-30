@@ -184,7 +184,7 @@
     <Compile Include="HttpClientHandlerTest.cs" />
     <Compile Include="CanaryTest.cs" />
     <Compile Include="..\..\..\common\TestRuntime.cs">
-        <Link>TestRuntime.cs</Link>
+      <Link>TestRuntime.cs</Link>
     </Compile>
     <Compile Include="..\..\ILReader.cs">
       <Link>ILReader.cs</Link>
@@ -198,16 +198,36 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Icon-app-60%403x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-60%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-83.5%402x.png" />
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Icon-app-60%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-60%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-83.5%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\BundledResources\BundledResources.csproj">

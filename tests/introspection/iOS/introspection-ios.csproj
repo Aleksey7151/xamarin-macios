@@ -50,7 +50,8 @@
     <MtouchDebug>True</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchLink>None</MtouchLink>
-    <MtouchExtraArgs></MtouchExtraArgs>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
@@ -65,7 +66,8 @@
     <MtouchDebug>True</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchLink>None</MtouchLink>
-    <MtouchExtraArgs></MtouchExtraArgs>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
     <MtouchArch>ARMv7</MtouchArch>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
@@ -80,7 +82,8 @@
     <MtouchDebug>True</MtouchDebug>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchLink>None</MtouchLink>
-    <MtouchExtraArgs></MtouchExtraArgs>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
   </PropertyGroup>
@@ -233,16 +236,36 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Icon-app-60%403x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-60%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76%402x.png" />
-    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-83.5%402x.png" />
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\Icon-app-60%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-57%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-60%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-72%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-76%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Condition="'$(TargetFrameworkIdentifier)' != 'Xamarin.WatchOS'" Include="Assets.xcassets\AppIcons.appiconset\icon-app-83.5%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="..\xamarin1.png">
